@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     end
   end
 
+  git '#path', to: "pages#index", via: :all
 end
