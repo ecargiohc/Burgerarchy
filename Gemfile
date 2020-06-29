@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 # I ADDED:
 gem 'active_model_serializers', '~> 0.10.2'
+gem 'fast_jsonapi', '~> 1.1', '>= 1.1.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
