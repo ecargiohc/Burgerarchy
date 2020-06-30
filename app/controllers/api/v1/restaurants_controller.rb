@@ -1,5 +1,5 @@
 module Api
-    module v1
+    module V1
         class RestaurantsController < ApplicationController
             def index
                 restaurants = Restaurant.all
