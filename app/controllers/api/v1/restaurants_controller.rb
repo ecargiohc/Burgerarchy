@@ -1,6 +1,8 @@
 module Api
     module V1
         class RestaurantsController < ApplicationController
+            protect_from_forgery with: :null_session
+
             def index
                 restaurants = Restaurant.all
 
@@ -46,7 +48,7 @@ module Api
             private
 
             def restaurant_params
-                params.require(:restaurant).permit(:name, :image_url)
+                params.require(:restaurant).permit(:title, :image_url)
             end
 # when we render the data on restaurant serializer, this is to make sure that any associated reviews is included in the json payload:
 # the following is one way to accomplish this using fast_jsonapi
